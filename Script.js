@@ -47,3 +47,12 @@ function desencriptar(stringDesencriptado){
     return stringDesencriptado
 
 }
+function btnCopiar() {
+    // Seleccionar el texto en el área de texto de salida
+    var texto = document.querySelector(".mensaje");
+    texto.select();
+    
+    // Copiar el texto seleccionado en el portapapeles
+    document.execCommand("copy");
+  }
+  
